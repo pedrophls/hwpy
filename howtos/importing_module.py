@@ -1,3 +1,3 @@
-import imported_class_apple
+import imported_module_apple
 
-imported_class_apple.apple()
+imported_module_apple.apple()
