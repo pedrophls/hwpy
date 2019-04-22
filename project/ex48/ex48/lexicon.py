@@ -10,5 +10,9 @@ def scan(direction):
         l_return.append(("direction","west"))
     if( "go" in direction):
         l_return.append(("verb","go"))
+    if( "kill" in direction):
+        l_return.append(("verb","kill"))
+    if( "eat" in direction):
+        l_return.append(("verb","eat"))
     return l_return
     
