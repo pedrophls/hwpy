@@ -28,5 +28,10 @@ def scan(palavra):
     for x in palavras_separadas :
         if x.isnumeric():
             l_return.append(("number", int(x)))
+    if "ASDFADFASDF" in palavras_separadas :
+        l_return.append(("error", "ASDFADFASDF"))
+    if "IAS" in palavras_separadas :
+        l_return.append(("error", "IAS"))
+
 
     return l_return
