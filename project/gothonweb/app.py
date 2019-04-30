@@ -19,7 +19,7 @@ def form():
     greeting = "Hello World"
     if(request.method == 'POST'):
         name = request.form['name']
-        greet = request.form['greet']
+        greet = "Hello " + request.form['greet']
         greeting = f"{greet}, {name}" 
         return render_template("index.html", greeting=greeting)
     else:
