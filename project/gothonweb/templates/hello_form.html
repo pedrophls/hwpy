@@ -1,15 +1,14 @@
-<html>
-    <head>
-        <title>Simples Form</title>
-    </head>
-    <body>
-        <h1>Fill out this form</h1>
-        <form action="/form" method="POST">
-            A Greeting: <input type="text" name="greet">
-            <br/>
-            Your name: <input type="text" name="name">
-            <br/>
-            <input type="submit" value="Go!">
-        </form>
-    </body>
-</html>
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>Fill out this form</h1>
+<form action="/form" method="POST">
+    A Greeting: <input type="text" name="greet">
+    <br/>
+    Your name: <input type="text" name="name">
+    <br/>
+    <input type="submit" value="Go!">
+</form>
+
+{% endblock %}
